@@ -18,6 +18,8 @@ export default function CartItem(props) {
       <td style={{width:'40%'}}>{product.title}</td>
       <td style={{width:'40%'}}>{product.category}</td>
       <td style={{width:'40%'}}>{product.price} </td>
+      
+     
       <td style={{width:'40%'}}> <button className='btn btn-danger ' onClick={()=>{dlt(index)}} >Remove</button></td>
     </tr>
    

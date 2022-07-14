@@ -3,16 +3,19 @@ import { ADD, CLEAR, REMOVE } from "../types";
 export default function cartReduer(state, action){
 
     switch(action.type){
-        case ADD: {
-            return  [
-                    ...state,
-                    {
-                        product: action.prod_info,
-                       
-                    }
-                ]
+        
+        case ADD: { 
            
-        }
+            return  [
+                ...state,
+                {
+                    product: action.prod_info,
+                    
+                }
+            ]
+            }
+           
+        
         case REMOVE: {
             const item_index = action.index;
             const new_state = [...state];

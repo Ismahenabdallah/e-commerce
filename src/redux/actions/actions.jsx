@@ -5,10 +5,10 @@ export function clearCart(){
         type: CLEAR
     }
 }
-export function AddToCart(prod_info){
+export function AddToCart(prod_info ){
     return{
         type:ADD,
-        prod_info,
+        prod_info
         
 
 
