@@ -7,7 +7,7 @@ import { AddToCart } from '../redux/actions/actions';
 
 function ListItem({ item }) {
   const dispatch = useDispatch();
-  const [quantity,setquantity]=useState(0)
+ // const [quantity,setquantity]=useState(0)
   const send = (product) => {
   //  setquantity(quantity+1);
     dispatch(AddToCart(product));
